@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Dev - Terminal Portfolio</title>
+    <meta name="description" content="Personal portfolio of Brandon - Full Stack Developer">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Terminal Header -->
+    <header class="terminal-header">
+        <div class="container">
+            <div class="terminal-window">
+                <div class="terminal-controls">
+                    <span class="control red"></span>
+                    <span class="control yellow"></span>
+                    <span class="control green"></span>
+                </div>
+                <div class="terminal-title">brandon@portfolio:~$</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Terminal Content -->
+    <main class="terminal-body">
+        <div class="container">
+            <!-- Welcome Section -->
+            <section class="terminal-section" id="home">
+                <div class="command-line">
+                    <span class="prompt">brandon@portfolio:~$</span>
+                    <span class="command">cat welcome.txt</span>
+                </div>
+                <div class="output">
+                    <pre class="ascii-art">
+    ╔══════════════════════════════════════════════════════════════╗
+    ║  ██████╗ ██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ ███╗   ██╗ ║
+    ║  ██╔══██╗██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔═══██╗████╗  ██║ ║
+    ║  ██████╔╝██████╔╝███████║██╔██╗ ██║██║  ██║██║   ██║██╔██╗ ██║ ║
+    ║  ██╔══██╗██╔══██╗██╔══██║██║╚██╗██║██║  ██║██║   ██║██║╚██╗██║ ║
+    ║  ██████╔╝██║  ██║██║  ██║██║ ╚████║██████╔╝╚██████╔╝██║ ╚████║ ║
+    ║  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝ ╚═╝  ╚═══╝ ║
+    ╚══════════════════════════════════════════════════════════════╝
+                    </pre>
+                    <p class="typing-text">Welcome to my digital workspace<span class="cursor">█</span></p>
+                    <p class="subtitle">Full Stack Developer | Problem Solver | Code Enthusiast</p>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="terminal-section" id="about">
+                <div class="command-line">
+                    <span class="prompt">brandon@portfolio:~$</span>
+                    <span class="command">whoami</span>
+                </div>
+                <div class="output">
+                    <h2 class="section-title">About Me</h2>
+                    <p>Hello! I'm Brandon, a passionate Full Stack Developer with a love for creating innovative solutions and clean, efficient code. With expertise in modern web technologies and a keen eye for user experience, I transform complex problems into elegant digital solutions.</p>
+                    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I believe in continuous learning and staying ahead of the curve in this ever-evolving tech landscape.</p>
+                    <div class="status-info">
+                        <p><span class="info-label">Status:</span> Available for new opportunities</p>
+                        <p><span class="info-label">Location:</span> Remote / Global</p>
+                        <p><span class="info-label">Experience:</span> 3+ years in web development</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="terminal-section" id="skills">
+                <div class="command-line">
+                    <span class="prompt">brandon@portfolio:~$</span>
+                    <span class="command">cat skills.txt</span>
+                </div>
+                <div class="output">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Frontend</h3>
+                            <ul class="skill-list">
+                                <li>HTML5 & CSS3</li>
+                                <li>JavaScript (ES6+)</li>
+                                <li>React.js</li>
+                                <li>Vue.js</li>
+                                <li>TypeScript</li>
+                                <li>Sass/SCSS</li>
+                                <li>Responsive Design</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Backend</h3>
+                            <ul class="skill-list">
+                                <li>Node.js</li>
+                                <li>Python</li>
+                                <li>PHP</li>
+                                <li>Express.js</li>
+                                <li>Django</li>
+                                <li>RESTful APIs</li>
+                                <li>GraphQL</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Database & Tools</h3>
+                            <ul class="skill-list">
+                                <li>MongoDB</li>
+                                <li>PostgreSQL</li>
+                                <li>MySQL</li>
+                                <li>Git & GitHub</li>
+                                <li>Docker</li>
+                                <li>AWS</li>
+                                <li>Linux/Unix</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="terminal-section" id="education">
+                <div class="command-line">
+                    <span class="prompt">brandon@portfolio:~$</span>
+                    <span class="command">cat education.txt</span>
+                </div>
+                <div class="output">
+                    <h2 class="section-title">Education & Certifications</h2>
+                    <div class="education-item">
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <p class="education-details">University of Technology | 2019 - 2023</p>
+                        <p>Specialized in Software Engineering and Web Development. Graduated with Honors.</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Relevant Certifications</h3>
+                        <ul class="cert-list">
+                            <li>AWS Certified Developer Associate</li>
+                            <li>Google Cloud Professional Developer</li>
+                            <li>MongoDB Certified Developer</li>
+                            <li>React Developer Certification</li>
+                        </ul>
+                    </div>
+                    <div class="cv-download">
+                        <a href="cv.pdf" class="download-btn" download>
+                            <span>📄</span> Download CV
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interests Section -->
+            <section class="terminal-section" id="interests">
+                <div class="command-line">
+                    <span class="prompt">brandon@portfolio:~$</span>
+                    <span class="command">cat interests.txt</span>
+                </div>
+                <div class="output">
+                    <h2 class="section-title">Interests & Passions</h2>
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <h3>🤖 Artificial Intelligence</h3>
+                            <p>Exploring machine learning algorithms and AI applications in web development.</p>
+                        </div>
+                        <div class="interest-item">
+                            <h3>🌐 Web3 & Blockchain</h3>
+                            <p>Diving into decentralized applications and smart contract development.</p>
+                        </div>
+                        <div class="interest-item">
+                            <h3>🚀 Space Technology</h3>
+                            <p>Following the latest developments in space exploration and satellite technology.</p>
+                        </div>
+                        <div class="interest-item">
+                            <h3>🎮 Game Development</h3>
+                            <p>Creating interactive experiences and learning game engine architectures.</p>
+                        </div>
+                        <div class="interest-item">
+                            <h3>📱 Mobile Development</h3>
+                            <p>Building cross-platform mobile applications with React Native and Flutter.</p>
+                        </div>
+                        <div class="interest-item">
+                            <h3>🎵 Music & Tech</h3>
+                            <p>Combining my love for music with technology through audio programming.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="terminal-section" id="projects">
+                <div class="command-line">
+                    <span class="prompt">brandon@portfolio:~$</span>
+                    <span class="command">ls projects/</span>
+                </div>
+                <div class="output">
+                    <h2 class="section-title">Projects Directory</h2>
+                    <div class="projects-grid">
+                        <div class="project-item">
+                            <div class="project-header">
+                                <h3>🌐 E-Commerce Platform</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com/brandon05-dev/ecommerce" target="_blank" class="project-link">GitHub</a>
+                                    <a href="https://demo-ecommerce.brandon.dev" target="_blank" class="project-link">Demo</a>
+                                </div>
+                            </div>
+                            <p>Full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.</p>
+                            <div class="tech-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Stripe</span>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-header">
+                                <h3>📱 Task Management App</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com/brandon05-dev/taskmaster" target="_blank" class="project-link">GitHub</a>
+                                    <a href="https://taskmaster.brandon.dev" target="_blank" class="project-link">Demo</a>
+                                </div>
+                            </div>
+                            <p>Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Socket.io</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-header">
+                                <h3>🎮 Retro Game Hub</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com/brandon05-dev/retro-games" target="_blank" class="project-link">GitHub</a>
+                                    <a href="https://retro.brandon.dev" target="_blank" class="project-link">Demo</a>
+                                </div>
+                            </div>
+                            <p>Collection of classic arcade games recreated using vanilla JavaScript and HTML5 Canvas. Features high scores and mobile-responsive controls.</p>
+                            <div class="tech-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">HTML5 Canvas</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">PWA</span>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-header">
+                                <h3>🤖 AI Chat Assistant</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com/brandon05-dev/ai-assistant" target="_blank" class="project-link">GitHub</a>
+                                    <a href="https://assistant.brandon.dev" target="_blank" class="project-link">Demo</a>
+                                </div>
+                            </div>
+                            <p>Intelligent chatbot with natural language processing capabilities, built using Python and integrated with modern web technologies.</p>
+                            <div class="tech-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">OpenAI API</span>
+                                <span class="tag">Flask</span>
+                                <span class="tag">React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="terminal-section" id="contact">
+                <div class="command-line">
+                    <span class="prompt">brandon@portfolio:~$</span>
+                    <span class="command">nano contact.form</span>
+                </div>
+                <div class="output">
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <p>Ready to collaborate or have a question? Drop me a message!</p>
+                            <div class="contact-details">
+                                <p><span class="info-label">Email:</span> brandon.dev@email.com</p>
+                                <p><span class="info-label">LinkedIn:</span> <a href="https://linkedin.com/in/brandon-dev" target="_blank">linkedin.com/in/brandon-dev</a></p>
+                                <p><span class="info-label">GitHub:</span> <a href="https://github.com/brandon05-dev" target="_blank">github.com/brandon05-dev</a></p>
+                                <p><span class="info-label">Twitter:</span> <a href="https://twitter.com/brandon_codes" target="_blank">@brandon_codes</a></p>
+                            </div>
+                        </div>
+                        
+                        <form class="contact-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject:</label>
+                                <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project or just say hello!"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <span>></span> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Terminal Footer -->
+    <footer class="terminal-footer">
+        <div class="container">
+            <div class="command-line">
+                <span class="prompt">brandon@portfolio:~$</span>
+                <span class="command">echo "Thanks for visiting! 🚀"</span>
+            </div>
+            <div class="output">
+                <p>&copy; 2025 Brandon Dev. Built with ❤️ and lots of ☕</p>
+                <p class="footer-note">This terminal is powered by pure HTML & CSS magic</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
