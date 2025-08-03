@@ -1,6 +1,7 @@
 # 🚀 Brandon Dev - Modern Portfolio Website
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-brightgreen?style=for-the-badge&logo=vercel)](https://brandon05-dev.github.io/Personal-Portfolio/)
+[![Live Demo](https://img.shields.io/badge/Personal%20Website-brandon--omutiti.vercel.app-blue?style=for-the-badge&logo=vercel)](https://brandon-omutiti.vercel.app/)
+[![Personal Website](https://img.shields.io/badge/Personal%20Website-brandon--omutiti.vercel.app-blue?style=for-the-badge&logo=vercel)](https://brandon-omutiti.vercel.app/)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-success?style=for-the-badge&logo=github)](https://github.com/Brandon05-dev/Personal-Portfolio)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -195,6 +196,7 @@ Replace files in the respective folders:
 ## 🤝 **Connect & Collaborate**
 
 ### **Contact Information**
+- **Personal Website**: [brandon-omutiti.vercel.app](https://brandon-omutiti.vercel.app/)
 - **Email**: [brandonomutiti@gmail.com](mailto:brandonomutiti@gmail.com)
 - **WhatsApp**: [+254 790 889 066](https://wa.me/254790889066)
 - **LinkedIn**: [brandon-dev](https://linkedin.com/in/brandon-dev)
