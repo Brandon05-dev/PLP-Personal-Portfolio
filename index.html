@@ -3,327 +3,523 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brandon Dev - Terminal Portfolio</title>
-    <meta name="description" content="Personal portfolio of Brandon - Full Stack Developer">
+    <title>Brandon Dev - Modern Portfolio</title>
+    <meta name="description" content="Personal portfolio of Brandon - Full Stack Developer specializing in modern web technologies">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%236366f1;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='45' font-weight='bold' text-anchor='middle' fill='white'%3EB%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Terminal Header -->
-    <header class="terminal-header">
-        <div class="container">
-            <div class="terminal-window">
-                <div class="terminal-controls">
-                    <span class="control red"></span>
-                    <span class="control yellow"></span>
-                    <span class="control green"></span>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-bracket">{</span>
+                <span class="brand-name">Brandon Omutiti</span>
+                <span class="brand-bracket">}</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="code-line">
+                        <span class="code-comment">// Welcome to my portfolio</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="code-keyword">const</span> 
+                        <span class="code-variable">developer</span> 
+                        <span class="code-operator">=</span> 
+                        <span class="code-string">"Brandon Omutiti"</span>
+                    </h1>
+                    <p class="hero-subtitle">Full Stack Web Developer | Web 3 & AI Enthusiast</p>
+                    <p class="hero-description">Turning complex problems into elegant web solutions with a spark of artificial intelligence.</p>
+                    <div class="hero-buttons">
+                        <a href="Docs/Resume.pdf" class="btn btn-primary" download>
+                            <span class="btn-icon">📄</span>
+                            Download CV
+                        </a>
+                        <a href="https://wa.me/254790889066" class="btn btn-secondary" target="_blank">
+                            <span class="btn-icon">💬</span>
+                            Let's Talk
+                        </a>
+                    </div>
                 </div>
-                <div class="terminal-title">brandon@portfolio:~$</div>
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <div class="window-title">portfolio.js</div>
+                        </div>
+                        <div class="window-content">
+                            <div class="code-lines">
+                                <div class="code-line"><span class="line-number">1</span><span class="code-keyword">class</span> <span class="code-class">Developer</span> <span class="code-bracket">{</span></div>
+                                <div class="code-line"><span class="line-number">2</span>&nbsp;&nbsp;<span class="code-method">constructor</span><span class="code-bracket">()</span> <span class="code-bracket">{</span></div>
+                                <div class="code-line"><span class="line-number">3</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-property">this.name</span> = <span class="code-string">'Brandon Omutiti'</span><span class="code-semicolon">;</span></div>
+                                <div class="code-line"><span class="line-number">4</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-property">this.skills</span> = <span class="code-bracket">[</span><span class="code-string">'React'</span>, <span class="code-string">'Node.js'</span><span class="code-bracket">]</span><span class="code-semicolon">;</span></div>
+                                <div class="code-line"><span class="line-number">5</span>&nbsp;&nbsp;<span class="code-bracket">}</span></div>
+                                <div class="code-line"><span class="line-number">6</span><span class="code-bracket">}</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
             </div>
         </div>
     </header>
 
-    <!-- Main Terminal Content -->
-    <main class="terminal-body">
-        <div class="container">
-            <!-- Welcome Section -->
-            <section class="terminal-section" id="home">
-                <div class="command-line">
-                    <span class="prompt">brandon@portfolio:~$</span>
-                    <span class="command">cat welcome.txt</span>
-                </div>
-                <div class="output">
-                    <pre class="ascii-art">
-    ╔══════════════════════════════════════════════════════════════╗
-    ║  ██████╗ ██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ ███╗   ██╗ ║
-    ║  ██╔══██╗██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔═══██╗████╗  ██║ ║
-    ║  ██████╔╝██████╔╝███████║██╔██╗ ██║██║  ██║██║   ██║██╔██╗ ██║ ║
-    ║  ██╔══██╗██╔══██╗██╔══██║██║╚██╗██║██║  ██║██║   ██║██║╚██╗██║ ║
-    ║  ██████╔╝██║  ██║██║  ██║██║ ╚████║██████╔╝╚██████╔╝██║ ╚████║ ║
-    ║  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝ ╚═╝  ╚═══╝ ║
-    ╚══════════════════════════════════════════════════════════════╝
-                    </pre>
-                    <p class="typing-text">Welcome to my digital workspace<span class="cursor">█</span></p>
-                    <p class="subtitle">Full Stack Developer | Problem Solver | Code Enthusiast</p>
-                </div>
-            </section>
-
-            <!-- About Section -->
-            <section class="terminal-section" id="about">
-                <div class="command-line">
-                    <span class="prompt">brandon@portfolio:~$</span>
-                    <span class="command">whoami</span>
-                </div>
-                <div class="output">
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-header">
                     <h2 class="section-title">About Me</h2>
-                    <p>Hello! I'm Brandon, a passionate Full Stack Developer with a love for creating innovative solutions and clean, efficient code. With expertise in modern web technologies and a keen eye for user experience, I transform complex problems into elegant digital solutions.</p>
-                    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I believe in continuous learning and staying ahead of the curve in this ever-evolving tech landscape.</p>
-                    <div class="status-info">
-                        <p><span class="info-label">Status:</span> Available for new opportunities</p>
-                        <p><span class="info-label">Location:</span> Remote / Global</p>
-                        <p><span class="info-label">Experience:</span> 3+ years in web development</p>
+                    <div class="section-subtitle">
+                        <span class="code-comment">// Getting to know the developer</span>
                     </div>
                 </div>
-            </section>
-
-            <!-- Skills Section -->
-            <section class="terminal-section" id="skills">
-                <div class="command-line">
-                    <span class="prompt">brandon@portfolio:~$</span>
-                    <span class="command">cat skills.txt</span>
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="glass-card">
+                            <p>Hello! I’m Brandon Omutiti a passionate Full-Stack Developer with 2+ years of experience crafting innovative web solutions. I specialize in modern JavaScript frameworks for the frontend and robust backend development with Node.js and Express. I also have a keen eye for clean, user-focused design.</p>
+                            <p>My journey in tech began with curiosity and has grown into a career dedicated to building scalable, high-performance applications. I thrive on transforming complex challenges into simple, beautiful, and intuitive digital experiences from the database to the user interface.</p>
+                            <div class="status-grid">
+                                <div class="status-item">
+                                    <span class="status-label">Status</span>
+                                    <span class="status-value">Available for hire</span>
+                                </div>
+                                <div class="status-item">
+                                    <span class="status-label">Location</span>
+                                    <span class="status-value">Remote / Hybrid / Global</span>
+                                </div>
+                                <div class="status-item">
+                                    <span class="status-label">Experience</span>
+                                    <span class="status-value">2+ years</span>
+                                </div>
+                                <div class="status-item">
+                                    <span class="status-label">Focus</span>
+                                    <span class="status-value">Full Stack Development</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-container">
+                            <div class="profile-image-wrapper">
+                                <img src="Images/Profile.jpg" alt="Brandon - Full Stack Developer" class="profile-image">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="output">
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section section-dark" id="skills">
+            <div class="container">
+                <div class="section-header">
                     <h2 class="section-title">Technical Skills</h2>
-                    <div class="skills-grid">
-                        <div class="skill-category">
+                    <div class="section-subtitle">
+                        <span class="code-comment">// My technical toolkit</span>
+                    </div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">🎨</div>
                             <h3>Frontend</h3>
-                            <ul class="skill-list">
-                                <li>HTML5 & CSS3</li>
-                                <li>JavaScript (ES6+)</li>
-                                <li>React.js</li>
-                                <li>Vue.js</li>
-                                <li>TypeScript</li>
-                                <li>Sass/SCSS</li>
-                                <li>Responsive Design</li>
-                            </ul>
                         </div>
-                        <div class="skill-category">
+                        <div class="skill-list">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">⚙️</div>
                             <h3>Backend</h3>
-                            <ul class="skill-list">
-                                <li>Node.js</li>
-                                <li>Python</li>
-                                <li>PHP</li>
-                                <li>Express.js</li>
-                                <li>Django</li>
-                                <li>RESTful APIs</li>
-                                <li>GraphQL</li>
-                            </ul>
                         </div>
-                        <div class="skill-category">
+                        <div class="skill-list">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">RESTful APIs</span>
+                            <span class="skill-tag">PHP</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">🗄️</div>
                             <h3>Database & Tools</h3>
-                            <ul class="skill-list">
-                                <li>MongoDB</li>
-                                <li>PostgreSQL</li>
-                                <li>MySQL</li>
-                                <li>Git & GitHub</li>
-                                <li>Docker</li>
-                                <li>AWS</li>
-                                <li>Linux/Unix</li>
-                            </ul>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Vercel</span>
+                            <span class="skill-tag">Linux</span>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Education Section -->
-            <section class="terminal-section" id="education">
-                <div class="command-line">
-                    <span class="prompt">brandon@portfolio:~$</span>
-                    <span class="command">cat education.txt</span>
-                </div>
-                <div class="output">
+        <!-- Education Section -->
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-header">
                     <h2 class="section-title">Education & Certifications</h2>
-                    <div class="education-item">
-                        <h3>Bachelor of Science in Computer Science</h3>
-                        <p class="education-details">University of Technology | 2019 - 2023</p>
-                        <p>Specialized in Software Engineering and Web Development. Graduated with Honors.</p>
-                    </div>
-                    <div class="education-item">
-                        <h3>Relevant Certifications</h3>
-                        <ul class="cert-list">
-                            <li>AWS Certified Developer Associate</li>
-                            <li>Google Cloud Professional Developer</li>
-                            <li>MongoDB Certified Developer</li>
-                            <li>React Developer Certification</li>
-                        </ul>
-                    </div>
-                    <div class="cv-download">
-                        <a href="cv.pdf" class="download-btn" download>
-                            <span>📄</span> Download CV
-                        </a>
+                    <div class="section-subtitle">
+                        <span class="code-comment">// Academic background & achievements</span>
                     </div>
                 </div>
-            </section>
+                <div class="education-content">
+                    <div class="education-container-card">
+                        <div class="education-grid">
+                            <div class="education-card">
+                                <div class="education-header">
+                                    <div class="education-icon">🎓</div>
+                                    <div>
+                                        <h3>Bachelor of Science in Biotechnology</h3>
+                                        <p class="education-meta">Jomo Kenyatta University of Science and Technology • 2024 - 2028</p>
+                                    </div>
+                                </div>
+                                <p>My journey bridges the analytical precision of biotechnology with the creative problem-solving of software development. This unique intersection has equipped me with a systematic approach to complex challenges, leveraging scientific methodology in building scalable digital solutions. My biotechnology foundation enhances my ability to think critically, analyze data patterns, and develop innovative web applications that solve real-world problems.</p>
+                            </div>
+                            
+                            <div class="education-card">
+                                <div class="education-header">
+                                    <div class="education-icon">💻</div>
+                                    <div>
+                                        <h3>Software Development Program</h3>
+                                        <p class="education-meta">Power Learn Project (PLP) • 2024 - Present</p>
+                                    </div>
+                                </div>
+                                <p>Comprehensive software development training focusing on modern programming languages, frameworks, and industry best practices. Developing proficiency in full-stack development, software architecture, and project management.</p>
+                            </div>
+                            
+                            <div class="education-card">
+                                <div class="education-header">
+                                    <div class="education-icon">⚙️</div>
+                                    <div>
+                                        <h3>Backend Web Development</h3>
+                                        <p class="education-meta">ALX Africa • 2024 - Present</p>
+                                    </div>
+                                </div>
+                                <p>Intensive backend development program covering server-side technologies, database management, API development, and cloud deployment. Mastering technologies like Node.js, Python, databases, and DevOps practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="certifications-card">
+                        <h3>Professional Certifications</h3>
+                        <div class="cert-grid">
+                            <div class="cert-item">
+                                <span class="cert-icon">🌐</span>
+                                <span>Backend Web Developer</span>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-icon">🏗️</span>
+                                <span>Professional Foundation</span>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-icon">💻</span>
+                                <span>Software Developer</span>
+                            </div>
+                            <div class="cert-item">
+                                <span class="cert-icon">🤖</span>
+                                <span>AI Essentials</span>
+                            </div>
+                        </div>
+                        <div class="cv-download-section">
+                            <a href="Docs/Resume.pdf" class="btn btn-outline" download>
+                                <span class="btn-icon">📥</span>
+                                Download Full CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <!-- Interests Section -->
-            <section class="terminal-section" id="interests">
-                <div class="command-line">
-                    <span class="prompt">brandon@portfolio:~$</span>
-                    <span class="command">cat interests.txt</span>
-                </div>
-                <div class="output">
+        <!-- Interests Section -->
+        <section class="section section-dark" id="interests">
+            <div class="container">
+                <div class="section-header">
                     <h2 class="section-title">Interests & Passions</h2>
-                    <div class="interests-grid">
-                        <div class="interest-item">
-                            <h3>🤖 Artificial Intelligence</h3>
-                            <p>Exploring machine learning algorithms and AI applications in web development.</p>
-                        </div>
-                        <div class="interest-item">
-                            <h3>🌐 Web3 & Blockchain</h3>
-                            <p>Diving into decentralized applications and smart contract development.</p>
-                        </div>
-                        <div class="interest-item">
-                            <h3>🚀 Space Technology</h3>
-                            <p>Following the latest developments in space exploration and satellite technology.</p>
-                        </div>
-                        <div class="interest-item">
-                            <h3>🎮 Game Development</h3>
-                            <p>Creating interactive experiences and learning game engine architectures.</p>
-                        </div>
-                        <div class="interest-item">
-                            <h3>📱 Mobile Development</h3>
-                            <p>Building cross-platform mobile applications with React Native and Flutter.</p>
-                        </div>
-                        <div class="interest-item">
-                            <h3>🎵 Music & Tech</h3>
-                            <p>Combining my love for music with technology through audio programming.</p>
-                        </div>
+                    <div class="section-subtitle">
+                        <span class="code-comment">// What drives my curiosity</span>
                     </div>
                 </div>
-            </section>
-
-            <!-- Projects Section -->
-            <section class="terminal-section" id="projects">
-                <div class="command-line">
-                    <span class="prompt">brandon@portfolio:~$</span>
-                    <span class="command">ls projects/</span>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <div class="interest-icon">🤖</div>
+                        <h4>AI & Machine Learning</h4>
+                        <p>Exploring the intersection of AI and web development, building intelligent applications.</p>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">🌐</div>
+                        <h4>Web3 & Blockchain</h4>
+                        <p>Diving into decentralized technologies and smart contract development.</p>
+                    </div>
+                    <div class="interest-card">
+                        <div class="interest-icon">📱</div>
+                        <h4>Mobile Development</h4>
+                        <p>Creating cross-platform mobile experiences with React Native and Flutter.</p>
+                    </div>
                 </div>
-                <div class="output">
-                    <h2 class="section-title">Projects Directory</h2>
-                    <div class="projects-grid">
-                        <div class="project-item">
-                            <div class="project-header">
-                                <h3>🌐 E-Commerce Platform</h3>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-subtitle">
+                        <span class="code-comment">// Some things I've built</span>
+                    </div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Images/BMI Project.png" alt="BMI Leather Shop" class="project-img">
+                            <div class="project-overlay">
                                 <div class="project-links">
-                                    <a href="https://github.com/brandon05-dev/ecommerce" target="_blank" class="project-link">GitHub</a>
-                                    <a href="https://demo-ecommerce.brandon.dev" target="_blank" class="project-link">Demo</a>
+                                    <a href="https://brandon05-dev.github.io/BMI-Leather-Art-Design/" class="project-link" target="_blank">Live Demo</a>
+                                    <a href="https://github.com/brandon05-dev/BMI-Leather-Art-Design" class="project-link" target="_blank">GitHub</a>
                                 </div>
-                            </div>
-                            <p>Full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.</p>
-                            <div class="tech-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">MongoDB</span>
-                                <span class="tag">Stripe</span>
                             </div>
                         </div>
-
-                        <div class="project-item">
-                            <div class="project-header">
-                                <h3>📱 Task Management App</h3>
-                                <div class="project-links">
-                                    <a href="https://github.com/brandon05-dev/taskmaster" target="_blank" class="project-link">GitHub</a>
-                                    <a href="https://taskmaster.brandon.dev" target="_blank" class="project-link">Demo</a>
-                                </div>
-                            </div>
-                            <p>Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
-                            <div class="tech-tags">
-                                <span class="tag">Vue.js</span>
-                                <span class="tag">Socket.io</span>
-                                <span class="tag">Express</span>
-                                <span class="tag">PostgreSQL</span>
-                            </div>
-                        </div>
-
-                        <div class="project-item">
-                            <div class="project-header">
-                                <h3>🎮 Retro Game Hub</h3>
-                                <div class="project-links">
-                                    <a href="https://github.com/brandon05-dev/retro-games" target="_blank" class="project-link">GitHub</a>
-                                    <a href="https://retro.brandon.dev" target="_blank" class="project-link">Demo</a>
-                                </div>
-                            </div>
-                            <p>Collection of classic arcade games recreated using vanilla JavaScript and HTML5 Canvas. Features high scores and mobile-responsive controls.</p>
-                            <div class="tech-tags">
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">HTML5 Canvas</span>
-                                <span class="tag">CSS3</span>
-                                <span class="tag">PWA</span>
-                            </div>
-                        </div>
-
-                        <div class="project-item">
-                            <div class="project-header">
-                                <h3>🤖 AI Chat Assistant</h3>
-                                <div class="project-links">
-                                    <a href="https://github.com/brandon05-dev/ai-assistant" target="_blank" class="project-link">GitHub</a>
-                                    <a href="https://assistant.brandon.dev" target="_blank" class="project-link">Demo</a>
-                                </div>
-                            </div>
-                            <p>Intelligent chatbot with natural language processing capabilities, built using Python and integrated with modern web technologies.</p>
-                            <div class="tech-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">OpenAI API</span>
-                                <span class="tag">Flask</span>
-                                <span class="tag">React</span>
+                        <div class="project-content">
+                            <h3>BMI Leather Shop</h3>
+                            <p>Premium e-commerce platform for luxury leather goods featuring elegant product showcase, secure payment processing, and intuitive shopping experience. Built with modern web technologies to deliver seamless user interaction and robust inventory management.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
                             </div>
                         </div>
                     </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Images/uniassisthub Project.png" alt="UniAssist Hub" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://uniassisthub-v2.onrender.com/" class="project-link" target="_blank">Live Demo</a>
+                                    <a href="https://github.com/brandon05-dev" class="project-link" target="_blank">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>UniAssist Hub</h3>
+                            <p>Comprehensive university student assistance platform connecting students with academic resources, peer support, and administrative services. Features real-time chat, document sharing, and personalized dashboard for enhanced campus life experience.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Images/Cleankili project.png" alt="CleanKili" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <span class="project-link disabled">Under Construction</span>
+                                    <a href="https://github.com/brandon05-dev" class="project-link" target="_blank">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>CleanKili</h3>
+                            <p>Environmental sustainability platform promoting waste management and recycling initiatives in Kilimani Locallity. Features interactive maps, waste tracking, reward systems, and community engagement tools to drive positive environmental impact.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Images/Shinda Play Project.png" alt="Shinda Play" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <span class="project-link disabled">Under Construction</span>
+                                    <a href="https://github.com/brandon05-dev" class="project-link" target="_blank">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Shinda Play</h3>
+                            <p>Shinda Play is an interactive eFootball gaming and entertainment platform designed for passionate football gamers and esports fans. It brings players together for competitive multiplayer matches, live tournaments, and social interactions all powered by modern web technologies that ensure smooth gameplay, real-time updates, and an engaging community experience..</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">WebSocket</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">Redis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="Images/FX Traders project.png" alt="Maal Traders Platform" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <span class="project-link disabled">Under Construction</span>
+                                    <a href="https://github.com/brandon05-dev" class="project-link" target="_blank">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Maal Traders Platform</h3>
+                            <p>Comprehensive trading bootcamp and educational platform designed to teach modern trading strategies, market analysis, and financial literacy. Features interactive learning modules, real-time market simulations, progress tracking, and community-driven learning experiences for aspiring traders.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Contact Section -->
-            <section class="terminal-section" id="contact">
-                <div class="command-line">
-                    <span class="prompt">brandon@portfolio:~$</span>
-                    <span class="command">nano contact.form</span>
+        <!-- Contact Section -->
+        <section class="section section-dark" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <div class="section-subtitle">
+                        <span class="code-comment">// Ready to start your next project?</span>
+                    </div>
                 </div>
-                <div class="output">
-                    <h2 class="section-title">Contact Me</h2>
-                    <div class="contact-content">
-                        <div class="contact-info">
-                            <p>Ready to collaborate or have a question? Drop me a message!</p>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="glass-card">
+                            <h3>Get In Touch</h3>
+                            <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology and development.</p>
                             <div class="contact-details">
-                                <p><span class="info-label">Email:</span> brandon.dev@email.com</p>
-                                <p><span class="info-label">LinkedIn:</span> <a href="https://linkedin.com/in/brandon-dev" target="_blank">linkedin.com/in/brandon-dev</a></p>
-                                <p><span class="info-label">GitHub:</span> <a href="https://github.com/brandon05-dev" target="_blank">github.com/brandon05-dev</a></p>
-                                <p><span class="info-label">Twitter:</span> <a href="https://twitter.com/brandon_codes" target="_blank">@brandon_codes</a></p>
+                                <div class="contact-item">
+                                    <span class="contact-icon">✉️</span>
+                                    <div>
+                                        <span class="contact-label">Email</span>
+                                        <a href="mailto:brandonomutiti@gmail.com">brandonomutiti@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-icon">📱</span>
+                                    <div>
+                                        <span class="contact-label">WhatsApp</span>
+                                        <a href="https://wa.me/254790889066" target="_blank">+254 790 889 066</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-icon">💼</span>
+                                    <div>
+                                        <span class="contact-label">LinkedIn</span>
+                                        <a href="https://linkedin.com/in/brandon-dev" target="_blank">linkedin.com/in/brandon-dev</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <span class="contact-icon">🔗</span>
+                                    <div>
+                                        <span class="contact-label">GitHub</span>
+                                        <a href="https://github.com/brandon05-dev" target="_blank">github.com/brandon05-dev</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        
-                        <form class="contact-form" action="#" method="POST">
-                            <div class="form-group">
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="contact-form-container">
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required placeholder="Your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                                </div>
                             </div>
-                            
                             <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject">Subject:</label>
+                                <label for="subject">Subject</label>
                                 <input type="text" id="subject" name="subject" required placeholder="What's this about?">
                             </div>
-                            
                             <div class="form-group">
-                                <label for="message">Message:</label>
-                                <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project or just say hello!"></textarea>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
                             </div>
-                            
-                            <button type="submit" class="submit-btn">
-                                <span>></span> Send Message
+                            <button type="submit" class="btn btn-primary">
+                                <span class="btn-icon"></span>
+                                Send Message
                             </button>
                         </form>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
 
-    <!-- Terminal Footer -->
-    <footer class="terminal-footer">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="command-line">
-                <span class="prompt">brandon@portfolio:~$</span>
-                <span class="command">echo "Thanks for visiting! 🚀"</span>
-            </div>
-            <div class="output">
-                <p>&copy; 2025 Brandon Dev. Built with ❤️ and lots of ☕</p>
-                <p class="footer-note">This terminal is powered by pure HTML & CSS magic</p>
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Brandon Dev. All rights reserved.</p>
+                    <p class="footer-note">Designed and coded with attention to detail and performance.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/brandon-dev" target="_blank" class="social-link">
+                        <span class="social-icon">💼</span>
+                    </a>
+                    <a href="https://github.com/brandon05-dev" target="_blank" class="social-link">
+                        <span class="social-icon">🔗</span>
+                    </a>
+                    <a href="https://x.com/BrandonOmutiti" target="_blank" class="social-link">
+                        <span class="social-icon">✖️</span>
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Back to Top ↑</a>
+                </div>
             </div>
         </div>
     </footer>
