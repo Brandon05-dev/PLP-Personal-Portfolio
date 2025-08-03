@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Information for SEO and Browser Configuration -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brandon Dev - Modern Portfolio</title>
     <meta name="description" content="Personal portfolio of Brandon - Full Stack Developer specializing in modern web technologies">
+    
+    <!-- Custom SVG Favicon with Gradient Branding -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%236366f1;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Ctext x='50' y='65' font-family='monospace' font-size='45' font-weight='bold' text-anchor='middle' fill='white'%3EB%3C/text%3E%3C/svg%3E">
+    
+    <!-- External Stylesheets and Fonts -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- ========================================
+         NAVIGATION BAR
+         Fixed top navigation with glassmorphism effect
+         ======================================== -->
     <nav class="navbar">
         <div class="nav-container">
+            <!-- Brand Logo with Code-style Brackets -->
             <div class="nav-brand">
                 <span class="brand-bracket">{</span>
                 <span class="brand-name">Brandon Omutiti</span>
                 <span class="brand-bracket">}</span>
             </div>
+            <!-- Navigation Menu Links -->
             <div class="nav-menu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
@@ -30,22 +40,30 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ========================================
+         HERO SECTION
+         Main landing area with code-themed design and interactive elements
+         ======================================== -->
     <header class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content">
+                <!-- Left Side: Text Content -->
                 <div class="hero-text">
+                    <!-- Code Comment Style Introduction -->
                     <div class="code-line">
                         <span class="code-comment">// Welcome to my portfolio</span>
                     </div>
+                    <!-- Main Title with JavaScript Syntax Highlighting -->
                     <h1 class="hero-title">
                         <span class="code-keyword">const</span> 
                         <span class="code-variable">developer</span> 
                         <span class="code-operator">=</span> 
                         <span class="code-string">"Brandon Omutiti"</span>
                     </h1>
+                    <!-- Professional Tagline and Description -->
                     <p class="hero-subtitle">Full Stack Web Developer | Web 3 & AI Enthusiast</p>
                     <p class="hero-description">Turning complex problems into elegant web solutions with a spark of artificial intelligence.</p>
+                    <!-- Call-to-Action Buttons -->
                     <div class="hero-buttons">
                         <a href="Docs/Resume.pdf" class="btn btn-primary" download>
                             <span class="btn-icon">📄</span>
@@ -57,8 +75,11 @@
                         </a>
                     </div>
                 </div>
+                <!-- Right Side: Interactive Code Window -->
                 <div class="hero-visual">
+                    <!-- Simulated Code Editor Window -->
                     <div class="code-window">
+                        <!-- Window Header with macOS-style Controls -->
                         <div class="window-header">
                             <div class="window-controls">
                                 <span class="control red"></span>
@@ -67,6 +88,7 @@
                             </div>
                             <div class="window-title">portfolio.js</div>
                         </div>
+                        <!-- Code Content with Syntax Highlighting -->
                         <div class="window-content">
                             <div class="code-lines">
                                 <div class="code-line"><span class="line-number">1</span><span class="code-keyword">class</span> <span class="code-class">Developer</span> <span class="code-bracket">{</span></div>
@@ -81,6 +103,7 @@
                 </div>
             </div>
         </div>
+        <!-- Animated Background Elements -->
         <div class="hero-background">
             <div class="bg-shapes">
                 <div class="shape shape-1"></div>
@@ -90,9 +113,15 @@
         </div>
     </header>
 
-    <!-- Main Content -->
+    <!-- ========================================
+         MAIN CONTENT SECTIONS
+         All portfolio sections wrapped in semantic main element
+         ======================================== -->
     <main>
-        <!-- About Section -->
+        <!-- ========================================
+             ABOUT SECTION
+             Personal introduction and professional status
+             ======================================== -->
         <section class="section" id="about">
             <div class="container">
                 <div class="section-header">
@@ -421,21 +450,30 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- ========================================
+             CONTACT SECTION
+             Professional contact information and contact form
+             Features glassmorphism design with proper contact icons
+             ======================================== -->
         <section class="section section-dark" id="contact">
             <div class="container">
+                <!-- Section Header -->
                 <div class="section-header">
                     <h2 class="section-title">Let's Work Together</h2>
                     <div class="section-subtitle">
                         <span class="code-comment">// Ready to start your next project?</span>
                     </div>
                 </div>
+                <!-- Two-Column Layout: Contact Info + Contact Form -->
                 <div class="contact-content">
+                    <!-- Left Column: Contact Information Card -->
                     <div class="contact-info">
                         <div class="glass-card">
                             <h3>Get In Touch</h3>
                             <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology and development.</p>
+                            <!-- Contact Methods with Professional Icons -->
                             <div class="contact-details">
+                                <!-- Email Contact -->
                                 <div class="contact-item">
                                     <span class="contact-icon">✉️</span>
                                     <div>
@@ -443,6 +481,7 @@
                                         <a href="mailto:brandonomutiti@gmail.com">brandonomutiti@gmail.com</a>
                                     </div>
                                 </div>
+                                <!-- WhatsApp Contact -->
                                 <div class="contact-item">
                                     <span class="contact-icon">📱</span>
                                     <div>
@@ -450,6 +489,7 @@
                                         <a href="https://wa.me/254790889066" target="_blank">+254 790 889 066</a>
                                     </div>
                                 </div>
+                                <!-- LinkedIn Professional Network -->
                                 <div class="contact-item">
                                     <span class="contact-icon">💼</span>
                                     <div>
@@ -457,6 +497,7 @@
                                         <a href="https://linkedin.com/in/brandon-dev" target="_blank">linkedin.com/in/brandon-dev</a>
                                     </div>
                                 </div>
+                                <!-- GitHub Code Repository -->
                                 <div class="contact-item">
                                     <span class="contact-icon">🔗</span>
                                     <div>
@@ -467,8 +508,11 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Right Column: Contact Form -->
                     <div class="contact-form-container">
+                        <!-- Contact Form (Note: Backend integration required for functionality) -->
                         <form class="contact-form">
+                            <!-- Name and Email Row -->
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="name">Name</label>
@@ -479,14 +523,17 @@
                                     <input type="email" id="email" name="email" required placeholder="your.email@example.com">
                                 </div>
                             </div>
+                            <!-- Subject Field -->
                             <div class="form-group">
                                 <label for="subject">Subject</label>
                                 <input type="text" id="subject" name="subject" required placeholder="What's this about?">
                             </div>
+                            <!-- Message Textarea -->
                             <div class="form-group">
                                 <label for="message">Message</label>
                                 <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
                             </div>
+                            <!-- Submit Button -->
                             <button type="submit" class="btn btn-primary">
                                 <span class="btn-icon"></span>
                                 Send Message
@@ -498,25 +545,34 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- ========================================
+         FOOTER SECTION
+         Site footer with copyright, social links, and back-to-top
+         ======================================== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
+                <!-- Copyright and Site Attribution -->
                 <div class="footer-text">
                     <p>&copy; 2025 Brandon Dev. All rights reserved.</p>
                     <p class="footer-note">Designed and coded with attention to detail and performance.</p>
                 </div>
+                <!-- Social Media Links -->
                 <div class="footer-social">
+                    <!-- LinkedIn Professional Profile -->
                     <a href="https://linkedin.com/in/brandon-dev" target="_blank" class="social-link">
                         <span class="social-icon">💼</span>
                     </a>
+                    <!-- GitHub Code Repositories -->
                     <a href="https://github.com/brandon05-dev" target="_blank" class="social-link">
                         <span class="social-icon">🔗</span>
                     </a>
+                    <!-- Twitter/X Social Profile -->
                     <a href="https://x.com/BrandonOmutiti" target="_blank" class="social-link">
                         <span class="social-icon">✖️</span>
                     </a>
                 </div>
+                <!-- Quick Navigation -->
                 <div class="footer-links">
                     <a href="#home">Back to Top ↑</a>
                 </div>

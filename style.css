@@ -1,52 +1,73 @@
 /* ========================================
-   CSS VARIABLES - Color Palette & Fonts
+   PORTFOLIO WEBSITE STYLES - BRANDON DEV
+   Modern, responsive portfolio with glassmorphism design
+   
+   Table of Contents:
+   1. CSS Variables & Custom Properties
+   2. Base Styles & Typography
+   3. Layout Components
+   4. Navigation
+   5. Hero Section
+   6. About Section
+   7. Skills Section
+   8. Education Section
+   9. Projects Section
+   10. Contact Section
+   11. Footer
+   12. Responsive Design
+   13. Animations & Transitions
+   ======================================== */
+
+/* ========================================
+   1. CSS VARIABLES - Design System
+   Centralized design tokens for consistent theming
    ======================================== */
 :root {
-  /* Color Palette */
-  --primary-color: #6366f1;
-  --primary-light: #818cf8;
-  --primary-dark: #4f46e5;
-  --secondary-color: #10b981;
-  --accent-color: #f59e0b;
-  --danger-color: #ef4444;
+  /* Brand Colors - Purple to Green Gradient Theme */
+  --primary-color: #6366f1;        /* Primary brand purple */
+  --primary-light: #818cf8;        /* Lighter purple variant */
+  --primary-dark: #4f46e5;         /* Darker purple variant */
+  --secondary-color: #10b981;      /* Complementary green */
+  --accent-color: #f59e0b;         /* Warning/highlight amber */
+  --danger-color: #ef4444;         /* Error red */
   
-  /* Background Colors */
-  --bg-primary: #0f0f23;
-  --bg-secondary: #1a1a3a;
-  --bg-tertiary: #252545;
-  --bg-light: #ffffff;
-  --bg-dark: #0a0a1a;
+  /* Background Color System */
+  --bg-primary: #0f0f23;           /* Main dark background */
+  --bg-secondary: #1a1a3a;         /* Secondary dark sections */
+  --bg-tertiary: #252545;          /* Card backgrounds */
+  --bg-light: #ffffff;             /* Light theme elements */
+  --bg-dark: #0a0a1a;              /* Deepest dark tone */
   
-  /* Text Colors */
-  --text-primary: #ffffff;
-  --text-secondary: #a1a1aa;
-  --text-tertiary: #71717a;
-  --text-dark: #1f2937;
-  --text-accent: #6366f1;
+  /* Typography Color Hierarchy */
+  --text-primary: #ffffff;         /* Main text color */
+  --text-secondary: #a1a1aa;       /* Secondary text */
+  --text-tertiary: #71717a;        /* Tertiary/muted text */
+  --text-dark: #1f2937;            /* Dark theme text */
+  --text-accent: #6366f1;          /* Accent text color */
   
-  /* Glass Effect */
-  --glass-bg: rgba(255, 255, 255, 0.1);
-  --glass-border: rgba(255, 255, 255, 0.2);
-  --glass-shadow: rgba(0, 0, 0, 0.1);
+  /* Glassmorphism Effect Variables */
+  --glass-bg: rgba(255, 255, 255, 0.1);      /* Frosted glass background */
+  --glass-border: rgba(255, 255, 255, 0.2);  /* Glass border highlight */
+  --glass-shadow: rgba(0, 0, 0, 0.1);        /* Subtle glass shadow */
   
-  /* Code Syntax Colors */
-  --code-keyword: #ff79c6;
-  --code-string: #f1fa8c;
-  --code-comment: #6272a4;
-  --code-variable: #8be9fd;
-  --code-operator: #ff79c6;
-  --code-class: #50fa7b;
-  --code-method: #ffb86c;
-  --code-property: #bd93f9;
+  /* Code Syntax Highlighting Colors */
+  --code-keyword: #ff79c6;         /* Keywords (const, class, function) */
+  --code-string: #f1fa8c;          /* String literals */
+  --code-comment: #6272a4;         /* Code comments */
+  --code-variable: #8be9fd;        /* Variable names */
+  --code-operator: #ff79c6;        /* Operators (=, +, -) */
+  --code-class: #50fa7b;           /* Class names */
+  --code-method: #ffb86c;          /* Method names */
+  --code-property: #bd93f9;        /* Object properties */
   
-  /* Fonts */
+  /* Typography System */
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-code: 'Fira Code', Monaco, 'Cascadia Code', monospace;
   
-  /* Spacing */
-  --container-max-width: 1200px;
-  --section-padding: 5rem 0;
-  --card-padding: 2rem;
+  /* Layout & Spacing System */
+  --container-max-width: 1200px;   /* Max content width */
+  --section-padding: 5rem 0;       /* Standard section padding */
+  --card-padding: 2rem;            /* Card internal padding */
   
   /* Border Radius */
   --radius-sm: 0.5rem;

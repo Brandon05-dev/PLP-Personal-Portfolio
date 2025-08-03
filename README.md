@@ -279,49 +279,7 @@ Found a bug or have a suggestion? Contributions are welcome!
 
 ---
 
-<div align="center">
-
-**⭐ Star this repository if you found it helpful!**
-
-**Built with ❤️ by [Brandon Omutiti](https://github.com/brandon05-dev)**
-
-*Last updated: August 2025*
-
-</div>
-
----
-
-## 📄 **License**
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License - Feel free to use this code for your own portfolio!
-```
-
----
-
-## 👨‍💻 **About the Developer**
-
-**Brandon** - Full Stack Developer & UI/UX Enthusiast
-
-- 🌐 **Portfolio**: [brandon-dev.com](https://brandon05-dev.github.io/PLP-Personal-Portfolio/)
-- 💼 **LinkedIn**: [linkedin.com/in/brandon-dev](https://linkedin.com/in/brandon-dev)
-- 🐱 **GitHub**: [github.com/Brandon05-dev](https://github.com/Brandon05-dev)
-- ✉️ **Email**: brandon.dev@email.com
-
----
-
-## 🙏 **Acknowledgments**
-
-- **Inspiration**: Terminal-based interfaces and hacker aesthetics
-- **Typography**: [Fira Code](https://github.com/tonsky/FiraCode) - Beautiful monospace font
-- **Colors**: Inspired by classic terminal color schemes
-- **Community**: Thanks to the open-source community for continuous inspiration
-
----
-
-## 📊 **Project Stats**
+##  **Project Stats**
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Brandon05-dev/PLP-Personal-Portfolio?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Brandon05-dev/PLP-Personal-Portfolio?style=flat-square)
@@ -334,8 +292,10 @@ MIT License - Feel free to use this code for your own portfolio!
 
 **⭐ Star this repository if you found it helpful!**
 
-**Built with ❤️ by [Brandon](https://github.com/Brandon05-dev) | © 2025**
+**Built with ❤️ by [Brandon Omutiti](https://github.com/brandon05-dev)**
 
-*"Code is poetry written in logic"*
+*"Crafting digital experiences with code and creativity"*
+
+*Last updated: August 2025*
 
 </div>
